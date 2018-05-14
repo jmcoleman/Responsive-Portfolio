@@ -1,0 +1,305 @@
+/*===========================================================================
+Additional Specifcations
+
+Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
+    Teal color (used for headings and backgrounds): #4aaaa5
+    Regular font color (used for paragraphs and all text besides the headings): #777777
+    Main header background color: #ffffff
+    Main header border color: #cccccc
+    Footer background color: #666666
+    Main content background color: #ffffff
+    Main content border color: #dddddd
+
+Fonts:
+    For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+    For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+
+Profile Image Found on index.html:
+    Use a picture of yourself. 
+    If you don't have a picture, you can grab a placeholder image from LoremPixel. Save the images to your images folder.
+
+Portfolio Images:
+
+Placeholder images can be found at LoremPixel. 
+    Save the images to your images folder.
+
+Background Images:
+    The background pattern used was found on Subtle Patterns. You can browse through that site and find whichever pattern you like.
+
+Dimensions:
+    The entire content and the main section content area is 960px wide.
+    Pro-tip: Use the Page Ruler extension to measure the size of elements.
+===========================================================================*/
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    color: darkgrey;
+}
+
+*:focus {
+    outline-color: #4AAAA5;
+}
+
+html {
+    height: 100%;
+    background-color: white;
+}
+
+body {
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #777777;
+    background-color: #4aaaa5; 
+
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+header {
+    background-color: #ffffff;;
+}
+
+hr {
+    color: lightgrey;
+    border-style: solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 16px 0px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #666666;
+    text-align: center;
+    color: lightgrey;
+    padding-top: 20px;
+}
+
+/* =======================================
+    Main Header and Navigation links
+========================================== */
+
+.main-header {
+    color: #4aaaa5;
+    /*background-color: #ffffff;*/
+    width: 960px;
+    margin: 0px auto;
+}
+
+.main-header .logo {
+    float: left;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 20px 20px 20px 20px;
+
+    text-decoration: none;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar {
+    position: relative;
+    top: 25px;
+    float: right;
+    margin: 0px 0px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 5px 0px 5px;
+}
+
+.navbar * li:last-child {
+    padding-right: 0px;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer; 
+    border-radius: .5rem;
+    color: darkgrey;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+.navbar a:hover {
+    background-color: #4aaaa5;
+    color: white;
+    /*border:1px solid darkgrey; */
+    box-shadow: 0 0 2px 0px darkgrey; 
+}
+
+/* makes the size of the button change so not using
+.navbar a:active {
+    color: #84F6F1;
+    font-weight: bolder;
+}
+*/
+
+/*==========================================
+    Main Section
+========================================== */
+
+.main-section-content, .contact-section-content, .portfolio-section-content {
+    color: #777777;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    width: 960px;
+    padding: 20px;
+    margin: 20px auto 20px auto;
+}
+
+.main-content {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url("../images/confectionary.png");
+
+    flex: 1 0 auto;
+
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    margin: 0px 0px 10px 0px;
+}
+
+.main-section-content p img {
+    float: left;
+
+    padding: 0px 20px 20px 0px;
+    max-width: 250px;
+    max-height: 175px;
+}
+
+/*==========================================
+    Portfolio Section
+========================================== */
+
+.portfolio-section-content .banner-container{
+    position:relative;
+    float: left;
+
+    text-align: center;
+    margin: 25px 50px 25px 0px;
+}
+
+.portfolio-section-content .banner-container img {
+    vertical-align:top;
+}
+
+.portfolio-section-content .banner-text{
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    background: #4aaaa5;
+    color: white;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.portfolio-section-content div.banner-container img{
+    width: 200px;
+    height: 200px;
+}
+
+/* force to only 2 projects per line - but I think this is due to my image dimensions */
+/* and shouldn't be needed */
+div[id^="project"]:nth-child(odd) { 
+    clear: left;
+}
+
+.clearfix:after { 
+    content: ""; 
+    visibility: hidden; 
+    display: block; 
+    clear: both;
+ }
+  
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/*========================================== 
+    Contact Section
+========================================== */
+
+.contact-section-content fieldset {
+    border: 0;
+}
+
+.contact-section-content legend {
+    display: none;
+}
+
+.contact-section-content input[type="submit"] {
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: none;
+}
+
+.contact-section-content form {
+    margin-top: 6px;
+}
+
+.contact-section-content input:not([type="submit"]) {
+    width: 910px;
+    padding: 10px;
+    border: lightgrey 1px solid;
+}
+
+.contact-section-content textarea {
+    width: 910px;
+    padding: 5px;
+    border-color: lightgrey;
+}
+
+.contact-section-content .form-item {
+    padding-top: 10px;
+}
+
+::-webkit-input-placeholder {   /* Chrome/Opera/Safari */
+    color: darkgrey;
+}
+::-moz-placeholder {            /* Firefox 19+ */
+    color: darkgrey;
+}
+:-ms-input-placeholder {        /* IE 10+ */
+    color: darkgrey;
+}
+:-moz-placeholder {             /* Firefox 18- */
+    color: darkgrey;
+}
+

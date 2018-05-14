@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+        <title>Jenni Coleman | Portfolio</title>
+    </head>
+    <body id="contact-page">
+
+        <header>
+            <div class="main-header">
+                <a class="logo">Jenni Coleman</a>
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">About</a></li><!--
+                        --><li><a href="portfolio.html">Portfolio</a></li><!--
+                        --><li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <section class="contact-section-content">
+                <h2>Contact</h2>
+                <hr>
+
+                <form>  <!-- action="/action_page.php"-->
+                    <fieldset>
+                        <!-- TODO create accessibility class ?? -->
+                        <!-- <span class="accessibility"> -->
+                        <legend>Contact Details</legend>
+
+                        <div class="form-item">
+                            <label for="contact_name">
+                                <span>Name</span>
+                            </label><br>
+                            <input id="contact_name" type="text" name="fullname" placeholder="John Smith" maxlength="100" required autofocus/><br>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="contact_email">
+                                <span>Email</span>
+                            </label><br>
+                            <input id="contact_email" type="email" name="email" placeholder="example@gmail.com" maxlength="100" required/><br>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="contact_message">
+                                <span>Message</span>
+                            </label><br>
+                            <textarea id="contact_message" name="message" rows="10" cols="50" maxlength="500"></textarea><br>
+                        </div>
+
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                    </form>
+            </section>
+        </div>
+
+        <footer>
+            <small>Copyright &copy;</small>
+        </footer>
+
+    </body>
+</html>
