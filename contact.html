@@ -4,8 +4,13 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <!-- stylesheets -->
+        <!-- reset -->
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
+
+        <!-- Icons and Fonts -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+        <!-- stylesheets -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 
         <title>Jenni Coleman | Portfolio</title>
@@ -26,7 +31,8 @@
             </div>
         </header>
         
-        <div class="main-content">
+        <div class="main-content clearfix">
+        <div class="container clearfix">
             <section class="contact-section-content">
                 <h2>Contact</h2>
                 <hr>
@@ -62,6 +68,42 @@
                     </fieldset>
                     </form>
             </section>
+
+            <aside class="sidebar">
+                <div id="connect">
+                    <h2>Connect with Me</h2>
+                    <hr>
+
+                    <!-- TODO remove inline style -->
+                    <div class="" style="display: flex; justify-content: center; position: relative";>
+
+                            <!-- social icons with brand colors -->
+                            <span class="fa-stack fa-2x social-github">
+                                <i class="fas fa-square fa-stack-2x" style="color: #333;"></i>
+                                <i class="fab fa-github  fa-stack-1x fa-inverse" style="color: white;"></i>
+                            </span>
+                            <span class="fa-stack fa-2x social-linkedin">
+                                <i class="fas fa-square fa-stack-2x" style="color: #0077B5;"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: white;"></i>
+                            </span>
+                            <span class="fa-stack fa-2x social-stack-overflow">
+                                <i class="fas fa-square fa-stack-2x" style="color: #F47F24;"></i>
+                                <i class="fab fa-stack-overflow  fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+
+                    <!-- FA approach but need similar icons that are not stacked or layered -->
+                    <!--i class="fab fa-github-square fa-5x"></i>
+                    <i class="fab fa-linkedin fa-5x"></i>
+                    <i class="fab fa-stack-overflow fa-5x"></i-->
+
+                    <!-- downloaded asset approach -->
+                    <!--img src="assets/images/github-128.png" class="social" alt="Github"/>
+                    <img src="assets.images.linkedin-128.png" class="social" alt="LinkedIn"/>
+                    <img src="assets.images.stackoverflow-128.png" class="social" alt="Stack Overflow"-->
+                </div>
+            </aside>
+        </div>
         </div>
 
         <footer>
