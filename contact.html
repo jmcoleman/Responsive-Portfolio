@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
 
         <!-- Icons and Fonts -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"-->
 
         <!-- stylesheets -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
@@ -17,30 +17,26 @@
     </head>
     <body id="contact-page">
 
-        <header>
-            <div class="main-header">
-                <a class="logo">Jenni Coleman</a>
+        <header class="debug">
+            <div class="container-head-foot debug">
+                <a href="index.html" id="logo">Jenni Coleman</a>
 
-                <nav class="navbar">
+                <nav class="navbar debug">
                     <ul>
-                        <li><a href="index.html">About</a></li><!--
-                        --><li><a href="portfolio.html">Portfolio</a></li><!--
-                        --><li><a href="contact.html">Contact</a></li>
+                        <li class="debug"><a href="index.html">About</a></li><!--
+                        --><li class="debug"><a href="portfolio.html">Portfolio</a></li><!--
+                        --><li class="debug"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         
         <div class="main-content clearfix">
-        <div class="container clearfix">
             <section class="contact-section-content">
-                <h2>Contact</h2>
-                <hr>
+                <h1>Contact</h1>
 
                 <form>  <!-- action="/action_page.php"-->
                     <fieldset>
-                        <!-- TODO create accessibility class ?? -->
-                        <!-- <span class="accessibility"> -->
                         <legend>Contact Details</legend>
 
                         <div class="form-item">
@@ -69,46 +65,32 @@
                     </form>
             </section>
 
-            <aside class="sidebar">
-                <div id="connect">
-                    <h2>Connect with Me</h2>
-                    <hr>
+            <!-- social icons with brand colors -->
+            <!--aside class="sidebar">
+                <h2>Connect with Me</h2>
 
-                    <!-- TODO remove inline style -->
-                    <div class="" style="display: flex; justify-content: center; position: relative";>
-
-                            <!-- social icons with brand colors -->
-                            <span class="fa-stack fa-2x social-github">
-                                <i class="fas fa-square fa-stack-2x" style="color: #333;"></i>
-                                <i class="fab fa-github  fa-stack-1x fa-inverse" style="color: white;"></i>
-                            </span>
-                            <span class="fa-stack fa-2x social-linkedin">
-                                <i class="fas fa-square fa-stack-2x" style="color: #0077B5;"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: white;"></i>
-                            </span>
-                            <span class="fa-stack fa-2x social-stack-overflow">
-                                <i class="fas fa-square fa-stack-2x" style="color: #F47F24;"></i>
-                                <i class="fab fa-stack-overflow  fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </div>
-
-                    <!-- FA approach but need similar icons that are not stacked or layered -->
-                    <!--i class="fab fa-github-square fa-5x"></i>
-                    <i class="fab fa-linkedin fa-5x"></i>
-                    <i class="fab fa-stack-overflow fa-5x"></i-->
-
-                    <!-- downloaded asset approach -->
-                    <!--img src="assets/images/github-128.png" class="social" alt="Github"/>
-                    <img src="assets.images.linkedin-128.png" class="social" alt="LinkedIn"/>
-                    <img src="assets.images.stackoverflow-128.png" class="social" alt="Stack Overflow"-->
+                <div class="social-container">
+                    <span class="fa-stack fa-2x social-github">
+                        <i class="fas fa-square fa-stack-2x" style="color: #333;"></i>
+                        <i class="fab fa-github  fa-stack-1x fa-inverse" style="color: white;"></i>
+                    </span>
+                    <span class="fa-stack fa-2x social-linkedin">
+                        <i class="fas fa-square fa-stack-2x" style="color: #0077B5;"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: white;"></i>
+                    </span>
+                    <span class="fa-stack fa-2x social-stack-overflow">
+                        <i class="fas fa-square fa-stack-2x" style="color: #F47F24;"></i>
+                        <i class="fab fa-stack-overflow  fa-stack-1x fa-inverse"></i>
+                    </span>
                 </div>
-            </aside>
-        </div>
+            </aside-->
         </div>
 
         <footer>
-            <small>Copyright &copy;</small>
+            <div class="container-head-foot">
+                Copyright &copy;
+            </div>
         </footer>
-
+    
     </body>
 </html>
