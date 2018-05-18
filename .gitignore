@@ -1,0 +1,9 @@
+# Ignore file named `README-example.txt`
+README-example.txt
+
+# Ignore folder named `output`
+output/
+temp/
+
+# Ignore all .java files
+*.java
