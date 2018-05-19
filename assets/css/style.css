@@ -6,7 +6,6 @@
 
 /*===========================================================================
 Additional Specifcations
-
 Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on web pages.
     Teal color (used for headings and backgrounds): #4aaaa5
     Regular font color (used for paragraphs and all text besides the headings): #777777
@@ -15,23 +14,17 @@ Colors Pro-tip: Use the Eye Dropper Chrome extension to find the colors used on 
     Footer background color: #666666
     Main content background color: #ffffff
     Main content border color: #dddddd
-
 Fonts:
     For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
     For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
-
 Profile Image Found on index.html:
     Use a picture of yourself. 
     If you don't have a picture, you can grab a placeholder image from LoremPixel. Save the images to your images folder.
-
 Portfolio Images:
-
 Placeholder images can be found at LoremPixel. 
     Save the images to your images folder.
-
 Background Images:
     The background pattern used was found on Subtle Patterns. You can browse through that site and find whichever pattern you like.
-
 Dimensions:
     The entire content and the main section content area is 960px wide.
     Pro-tip: Use the Page Ruler extension to measure the size of elements.
@@ -132,7 +125,6 @@ p {
     display: table-row;
     height: 1px;
 }
-
 .page-row-expanded {
     height: 100%;
 }
@@ -265,7 +257,6 @@ footer .container-head-foot {
 .portfolio-section-content {
     max-width: 960px; 
     min-width: 275px;
-    /*margin: 1.25em auto .625em auto; */
     margin: 20px auto 0 auto;
 
     color: #777777;
@@ -506,13 +497,11 @@ div[id^="project"]:nth-child(odd) {
     min-width: 275px;
     float: right;
 }
-
 .social-container {
     display: flex;
     justify-content: center;
     position: relative;
 }
-
 .social-github,
 .social-linkedin,
 .social-stack-overflow {
@@ -528,43 +517,117 @@ div[id^="project"]:nth-child(odd) {
     /*
     body { background-color: red; }*/
 
+    #masthead {
+        height: 10vh;
+    }
+    
     #logo {
-        left: 10%;
+        left: 5%;
+        height: 10vh;
+    }
+
+    .about-section-content, 
+    .contact-section-content, 
+    .portfolio-section-content {
+        max-width: 90%; 
+        margin: 20px auto 0 auto;
     }
 }
 
 /* If [device width] is less than or equal to 768px */
 @media only screen and (max-width: 768px) {                 /* tablet */
     /*body { background-color: green; } */
-/*
+
     header {
-        width: 100%;
-        position: fixed;
-        overflow: auto;
-        z-index: 99;
+        width: 100vw;
     }
-*/
+
+    #masthead {
+        height: 10vh;
+    }
+
+    #logo {
+        left: 5%;
+        height: 10vh;
+    }
+
+    .navbar li:last-child { 
+        padding-right: 0; 
+        margin-right: 0;
+    }
 }
 
 /* If [device width] is less than or equal to 640px */
 @media only screen and (max-width: 640px) {                 /* phone in landscape */
     /*body { background-color: blue; }*/
 
+    body {
+        min-width: 400px;
+    }
+
     header {
-        width: 100%;
+        width: 100vw;
+        height: 30vh;
         position: static;
+        display: block;
         overflow: auto;
-        z-index: 99;
+    }
+
+    container-head-foot a {
+        padding: 5px 0;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    #masthead {
+        height: 20vh;
+        width: 100%;
+    }
+
+    #logo {
+        width: 100%;
+        height: 8vh;
+        position: static;
+        display: block;
+        line-height: 1em;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar {
         width: 100%;
-        position: static;
-        overflow: auto;
-        z-index: 99;
-
-        text-align: center;
+        height: 10%;
+        top: 20px;
+  /*      margin: 0;
+        padding: 0;*/
     }
-  
+
+    .navbar ul {
+        text-align:center;
+        width: 100%;
+        height: 10%;
+    }
+
+    .navbar ul li {
+        float: none;
+        display: inline;
+    }
+    
+    .navbar li:last-child { 
+        padding-right: 0; 
+        margin-right: 0;
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        height: 10%;
+    }
+
+    .about-section-content, 
+    .contact-section-content, 
+    .portfolio-section-content {
+        max-width: 90%; 
+        margin: 2% auto 0 auto;
+    }
 }
 
